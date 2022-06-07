@@ -1,0 +1,112 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-07T04:07:31.229Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6084000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.Hook.startTest()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Verify that a particular job and it\u0027s readme link exists in the website",
+        "description": "",
+        "id": "job-finder-test;verify-that-a-particular-job-and-it-s-readme-link-exists-in-the-website;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 780000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.Hook.endTest(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 121000000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Open Dave.com",
+            "match": {
+              "location": "StepDefs.jobFinderSteps.openDaveCom()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 212000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Navigate to the Careers page",
+            "match": {
+              "location": "StepDefs.jobFinderSteps.navigateToTheCareersPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2174000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Verify that particular job opening \"VP, Strategic Finance and Investor Relations\" exists in the career page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"VP, Strategic Finance and Investor Relations\"",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefs.jobFinderSteps.verifyThatParticularJobOpeningExistsInTheCareerPage(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 923000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click the Read More link for the particular job",
+            "match": {
+              "location": "StepDefs.jobFinderSteps.iClickTheReadMoreLinkForTheParticularJob()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1325000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "It opens up a new window containing the job description for the particular job",
+            "match": {
+              "location": "StepDefs.jobFinderSteps.itOpensUpANewWindowContainingTheJobDescriptionForTheParticularJob()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Job Finder Test",
+    "description": "",
+    "id": "job-finder-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/jobFinder.feature",
+    "tags": []
+  }
+]

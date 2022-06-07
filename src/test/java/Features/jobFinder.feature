@@ -3,9 +3,9 @@ Feature: Job Finder Test
     Given Open Dave.com
     And Navigate to the Careers page
     And Verify that particular job opening "<jobs>" exists in the career page
-    When I click on Login button
-    Then I should be able to successfully login
+    When I click the Read More link for the particular job
+    Then It opens up a new window containing the job description for the particular job
 
     Examples:
       |jobs     |
-      |Senior QA Engineer|
+      |VP, Strategic Finance and Investor Relations|

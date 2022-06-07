@@ -1,6 +1,7 @@
 package PageObject;
 
 import Base.Setup;
+import StepDefs.Hook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,12 +17,13 @@ public class HomePage extends Setup{
     @FindBy(how= How.LINK_TEXT, using = "Careers")
     public WebElement careerPageButton;
     public void verifyTitle(){
-        String expectedTitle = "Dave - Mobile Banking App - Cash Advance, Budget, Build Credit";
-        Assert.assertEquals(expectedTitle,driver.getTitle(),"Not in the correct homepage!");
+
+        Assert.assertEquals(Hook.expectedHomepageTitle,driver.getTitle(),"Not in the correct homepage!");
 
     }
     public void clickCareers(){
         careerPageButton.click();
+
     }
 
 

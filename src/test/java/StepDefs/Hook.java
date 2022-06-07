@@ -9,9 +9,16 @@ import org.openqa.selenium.TakesScreenshot;
 import org.testng.util.Strings;
 
 public class Hook extends Setup {
+    public static String expectedHomepageTitle = "Dave - Mobile Banking App - Cash Advance, Budget, Build Credit";
+    public static String expectedCareerPageTitle = "Jobs at Dave - Fintech Careers - Current Openings";
+    public static String jobTitle;
+    public static String careerPageID;
+    public static String jobDescriptionID;
     public static String url;
     public static String driverType = System.getProperty("browser");
     public static String envData = System.getProperty("env");
+
+
 
     @Before
     public void startTest(){
