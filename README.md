@@ -8,4 +8,4 @@ cmd+a to select all code option+cmd+L
 CMD+A CTL+I
 
 #How to execute test in CMD
-mvn verify -Denv=qa -Dbrowser=ch -Dcucumber.filter.tags="@hb"
+mvn verify -Denv=qa -Dbrowser=ch 
